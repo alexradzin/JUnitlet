@@ -1,0 +1,10 @@
+*/target/**
+target/classes
+target/dependency-maven-plugin-markers
+target/generated-sources
+target/junitlet-1.0.jar
+target/junitlet-1.0-SNAPSHOT.jar
+target/maven-archiver
+target/surefire
+target/surefire-reports
+target/test-classes
