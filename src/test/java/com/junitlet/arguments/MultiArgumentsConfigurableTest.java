@@ -5,9 +5,7 @@ import static org.junit.Assert.assertEquals;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 import org.junit.AfterClass;
 import org.junit.runner.RunWith;
@@ -37,13 +35,11 @@ public class MultiArgumentsConfigurableTest {
 	
 	@ConfigurableTest("one")
 	public void test(int i, String s) {
-//		oneResults.add(new Object[] {i, s});
 		oneResults.add(Arrays.<Object>asList(i, s));
 	}
 	
 	@AfterClass
 	public static void after() {
-//		Set<Object[]> p = new HashSet<Object[]>(Arrays.asList(oneParams));
 		assertEquals(expectedResults, oneResults);
 	}
 	

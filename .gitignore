@@ -8,3 +8,6 @@ target/maven-archiver
 target/surefire
 target/surefire-reports
 target/test-classes
+.classpath
+.project
+.settings/
