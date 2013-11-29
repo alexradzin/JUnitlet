@@ -1,4 +1,4 @@
-package com.junitlet.runner;
+package com.junitlet.rule;
 import org.junit.Rule;
 import org.junit.Test;
 
@@ -6,7 +6,7 @@ import com.junitlet.annotation.TestTimeout;
 import com.junitlet.rule.SafeTimeout;
 
 
-public class TimeoutTest {
+public class SafeTimeoutTest {
 	 @Rule
 	 public final SafeTimeout timeout = new SafeTimeout(1000);	
 	
